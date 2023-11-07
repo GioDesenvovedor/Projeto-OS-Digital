@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "605998969847",
+    "project_id": "os-digital-53333",
+    "storage_bucket": "os-digital-53333.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:605998969847:android:64589b6d46ef4bab97b4f2",
+        "android_client_info": {
+          "package_name": "com.gvn.osdigital"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "605998969847-t6cfkqdpuddiub1034gghi5gt8a3mcd9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gvn.osdigital",
+            "certificate_hash": "047ec0bb3f356155aed64c6746d55c3b9fd53b5a"
+          }
+        },
+        {
+          "client_id": "605998969847-5j8nglvmj41sn1smoiqsl8b49qhg6idk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDCc20cXFQBLcHTm0UzZvj3biE7ggK9pOQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "605998969847-5j8nglvmj41sn1smoiqsl8b49qhg6idk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

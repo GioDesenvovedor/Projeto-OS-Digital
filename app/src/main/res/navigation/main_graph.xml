@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/logoSplashFragment">
+
+    <fragment
+        android:id="@+id/logoSplashFragment"
+        android:name="com.gvn.osdigital.ui.LogoSplashFragment"
+        android:label="fragment_logo_splash"
+        tools:layout="@layout/fragment_logo_splash" >
+        <action
+            android:id="@+id/action_logoSplashFragment_to_navigationAuthent"
+            app:destination="@id/navigationAuthent"
+            app:popUpTo="@id/logoSplashFragment"
+            app:popUpToInclusive="true"/>
+        <action
+            android:id="@+id/action_logoSplashFragment_to_menuFragment2"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/logoSplashFragment"
+            app:popUpToInclusive="true"/>
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="com.gvn.osdigital.ui.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <action
+            android:id="@+id/action_menuFragment_to_navigationAuthent"
+            app:destination="@id/navigationAuthent" />
+        <action
+            android:id="@+id/action_menuFragment_to_criaOsFragment"
+            app:destination="@id/criaOsFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_adClientesFragment"
+            app:destination="@id/adClientesFragment" />
+        <action
+            android:id="@+id/action_menuFragment_to_cadastroProdutosFragment"
+            app:destination="@id/cadastroProdutosFragment" />
+    </fragment>
+    <navigation android:id="@+id/navigationAuthent"
+        app:startDestination="@id/apresentacaoFragment">
+        <fragment
+            android:id="@+id/apresentacaoFragment"
+            android:name="com.gvn.osdigital.auth.ApresentacaoFragment"
+            android:label="fragment_apresentacao"
+            tools:layout="@layout/fragment_apresentacao" >
+            <action
+                android:id="@+id/action_apresentacaoFragment_to_loginFragment2"
+                app:destination="@id/loginFragment" />
+            <action
+                android:id="@+id/action_apresentacaoFragment_to_cadastroFragment2"
+                app:destination="@id/cadastroFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/loginFragment"
+            android:name="com.gvn.osdigital.auth.LoginFragment"
+            android:label="fragment_login"
+            tools:layout="@layout/fragment_login" >
+            <action
+                android:id="@+id/action_loginFragment_to_recuperarSenhaFragment3"
+                app:destination="@id/recuperarSenhaFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/cadastroFragment"
+            android:name="com.gvn.osdigital.auth.CadastroFragment"
+            android:label="fragment_cadastro"
+            tools:layout="@layout/fragment_cadastro" >
+            <action
+                android:id="@+id/action_cadastroFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
+        </fragment>
+        <fragment
+            android:id="@+id/recuperarSenhaFragment"
+            android:name="com.gvn.osdigital.auth.RecuperarSenhaFragment"
+            android:label="fragment_recuperar_senha"
+            tools:layout="@layout/fragment_recuperar_senha" >
+            <action
+                android:id="@+id/action_recuperarSenhaFragment_to_loginFragment"
+                app:destination="@id/loginFragment" />
+        </fragment>
+        <action
+            android:id="@+id/action_global_menuFragment2"
+            app:destination="@id/menuFragment"
+            app:popUpTo="@id/loginFragment"
+            app:popUpToInclusive="true"/>
+    </navigation>
+    <fragment
+        android:id="@+id/criaOsFragment"
+        android:name="com.gvn.osdigital.ui.CriaOsFragment"
+        android:label="fragment_cria_os"
+        tools:layout="@layout/fragment_cria_os" />
+    <fragment
+        android:id="@+id/adClientesFragment"
+        android:name="com.gvn.osdigital.ui.AdClientesFragment"
+        android:label="fragment_ad_clientes"
+        tools:layout="@layout/fragment_ad_clientes" />
+    <fragment
+        android:id="@+id/cadastroProdutosFragment"
+        android:name="com.gvn.osdigital.CadastroProdutosFragment"
+        android:label="fragment_cadastro_produtos"
+        tools:layout="@layout/fragment_cadastro_produtos" />
+</navigation>

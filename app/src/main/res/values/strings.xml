@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">OS Digital</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    //erro generico de autenticação
+    <string name="erro_generic">Ocorreu um erro, por favor tente novamente mais tarde</string>
+
+    <!-- Erros FIREBASE authenticação  -->
+    <string name="account_not_registered_register_fragment">Nenhuma conta encontrada comm este e-mail</string>
+    <string name="invalid_email_register_fragment">Insira um e-mail valido</string>
+    <string name="invalid_password_register_fragment">Senha inválida, tente novamente</string>
+    <string name="email_in_use_register_fragment">Este e-mail,já esta em uso</string>
+    <string name="strong_password_register_fragment">A senha deve ter pelo menos 6 caracteres</string>
+    <string name="login_register">Criar conta</string>
+</resources>
