@@ -60,8 +60,6 @@ class ProdutosRegistradosFragment : Fragment() {
     }
 
 
-
-
     private fun clickButton() {
         binding.floatButton2.setOnClickListener {
             findNavController().navigate(R.id.action_menuFragment_to_cadastroProdutosFragment)
@@ -99,7 +97,9 @@ class ProdutosRegistradosFragment : Fragment() {
                         initAdapter()
 
                     } else {
-                        binding.textCarregando3.text = "Nenhuma Cliente Registrado"
+                        binding.textCarregando3.text = "Nenhum produto Registrado\n" +
+                                " Aperte o botão + abaixo\n" +
+                                " para Adicionar Produtos"
                         binding.progres.isVisible = false
                     }
                 }
@@ -118,20 +118,18 @@ class ProdutosRegistradosFragment : Fragment() {
         binding.recyPRSaves3.layoutManager = LinearLayoutManager(requireContext())
         binding.recyPRSaves3.setHasFixedSize(true)
 
-        registroProdutosAdapter = RegistroProutosAdapter({registroProdutos->
+        registroProdutosAdapter = RegistroProutosAdapter({ registroProdutos ->
 
 
             //evento clique para tela de produtos salvos
-            val intent= Intent(context,TelaProdutoSalvo::class.java)
+            val intent = Intent(context, TelaProdutoSalvo::class.java)
             intent.putExtra("dadosProdutosSave", registroProdutos)
             startActivity(intent)
-        },requireContext(), registrolistproduto)
+        }, requireContext(), registrolistproduto)
         binding.recyPRSaves3.adapter = registroProdutosAdapter
 
 
     }
-
-
 
 
 }

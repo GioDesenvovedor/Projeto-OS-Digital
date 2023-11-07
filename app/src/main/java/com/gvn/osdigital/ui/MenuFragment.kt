@@ -68,6 +68,7 @@ class MenuFragment : Fragment() {
             }
             .create()
             .show()
+
     }
 
 //      implementar menu de canto

@@ -84,7 +84,9 @@ class ClientesRegistradosFragment : Fragment() {
                         initAdapter()
 
                     }else{
-                        binding.textCarregando.text = "Nenhuma Cliente Registrado"
+                        binding.textCarregando.text = "Nenhum Cliente Registrado\n" +
+                                " Aperte o botão + abaixo\n" +
+                                "para Adicionar Clientes"
                         binding.progres.isVisible = false
                     }
                 }
