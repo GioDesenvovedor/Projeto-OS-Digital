@@ -9,6 +9,9 @@ Crie Ordem de serviços, cadastre clientes e produtos, após a criação de uma 
 # Imagens do App
 ![Apresentação1 OS Digital](https://github.com/GioDesenvovedor/Projeto-OS-Digital/assets/149623762/93bc6848-800e-4fcc-b51a-b52f0ba84718)
 
+![Apresentação2 OS Digital](https://github.com/GioDesenvovedor/Projeto-OS-Digital/assets/149623762/9cb36b11-07b6-4d63-897a-fba5d8742583)
+
+
 # Tecnologias Utilizadas:
 •	Kotlin
 •	API
