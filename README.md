@@ -17,7 +17,7 @@ Crie Ordem de serviços, cadastre clientes e produtos, após a criação de uma 
 •	API
 •	Retrofit
 •	Coroutines
-•	SharedPreferences
+•	Firebase
 •	RecyclerView
 •	LiveData 
 •	Gson
